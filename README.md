@@ -1,2 +1,12 @@
 # Competitive-Programming-Platform-for-NWU
-Competitive Programming Platform for North Western University, Khulna
+
+```
+A Project Report
+On
+“Competitive Programming Platform for North Western University, Khulna”
+For the Advanced Programming  laboratory
+of the
+Degree of Bachelor of Science
+In Department of Computer Science and Engineering
+
+```
