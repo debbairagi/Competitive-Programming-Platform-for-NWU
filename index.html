@@ -22,7 +22,7 @@
     </script>
 </head>
 <body>
-    <header class="w-10/12 mx-auto">
+    <header class="lg:w-10/12 mx-auto mt-6">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -30,7 +30,7 @@
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-44">
                       <li><a>Home</a></li>
                       <li><a>Products</a></li>
                       <li><a>Resources</a></li>
@@ -38,26 +38,91 @@
                       <li><a>About Us</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-3xl font-bold">Hex<span class="text-blue-400">Clan</span></a>
+                  <a class="btn btn-ghost text-3xl font-bold">Hex<span class="text-blue-900">Clan</span></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-[16px] font-semibold">
-                    <li class="text-blue-400"><a>Home</a></li>
+                    <li class="text-blue-900 font-bold"><a>Home</a></li>
                     <li><a>Products</a></li>
                     <li><a>Resources</a></li>
                     <li><a>Developers</a></li>
                     <li><a>About Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end gap-4">
-                    <a class="btn bg-blue-400 text-white">Log In</a>
-                    <a class="btn bg-blue-400 text-white">Sing Up</a>
+                <div class="navbar-end lg:gap-4">
+                    <a class="btn bg-blue-900 text-white">Log In</a>
+                    <a class="btn bg-blue-900 text-white">Sing Up</a>
                 </div>
               </div>
         </nav>
 
     </header>
     <main>
+      <!-- banner section  -->
+      <section class="w-10/12 mx-auto mt-6 rounded-3xl">
+        <div class="hero h-[500px]" style="background-image: url(Images/banner1.avif);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-3xl text-white lg:text-5xl font-bold">NWU PROGRAMMING</h1>
+              <p class="mb-5">Start your coding journey today. Learn to code from scratch with job focussed courses designed by experts. infographic. Start learning today.</p>
+              <button class="btn text-white bg-blue-950 lg:text-xl">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- learn section  -->
+      <section class="w-10/12 mx-auto mt-10">
+        <h2 class="text-4xl font-bold text-center">A New Way To Learn</h2>
+        <p class="text-center m-4">HexClan is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10  lg:gap-20">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="Images/practice.jpg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title font-bold text-2xl text-blue-900">Practice</h2>
+              <p>Practicing coding outside of the classroom is as important as the time you spend inside of it. Jaimie Stevens shares her strategy for how to improve programming skills in your free time.</p>
+              
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="Images/compete.avif" alt="Shoes" class="rounded-xl pt-20" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title font-bold text-2xl text-blue-900">Compete</h2>
+              <p>Coding challenges include a plethora of competitions like hackathons, programming challenges, and more. They are aimed at challenging your coding skills. Hackathons generally include developing an app/game/website based on a particular theme.</p>
+              
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="Images/discuss.avif" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title font-bold text-2xl text-blue-900">Discuss</h2>
+              <p>How you collaborate with other developers to build better software and get better results. You will learn why it is worthwhile to collaborate with other software developers and how you can improve your own skills in a targeted manner.</p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- explore skills section  -->
+      <section class="w-10/12 mx-auto mt-10">
+        <div class="hero lg:min-h-[450px] bg-gray-200 text-blue-950 rounded-2xl">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="Images/code.1.avif" class="lg:max-w-xl rounded-xl lg:ml-6" />
+            <div class="p-10">
+              <h1 class="text-4xl font-bold">
+                Explore and expand your skills.</h1>
+              <p class="py-6 text-gray-700">As technology continues to evolve, your success as a coder depends on your capability to learn and adapt. Any seasoned developer knows that you should always try to improve your coding skills. <br> Coding is a skill that requires a ton of practice and effort to master it. You can’t just wake up one day and suddenly become good at coding. All the good engineers out there have worked countless days and nights to perfect their coding skills. Therefore, you should not quit when you start your journey as a programmer or coder.  </p>
+              <button class="btn bg-blue-950 text-xl text-white">Get Started</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
 
     </main>
     <footer>
