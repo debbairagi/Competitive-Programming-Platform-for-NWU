@@ -1,0 +1,74 @@
+<!DOCTYPE html data-theme="light">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+
+    <!-- Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+             'btn-primary': 'blue-400',
+  
+  
+            }
+          }
+        }
+      }
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+          <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="text-center lg:text-left">
+                <h1 class="text-5xl font-bold">Hex<span class="text-blue-900">Clan</span></h1>
+                <p class="py-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora amet assumenda, non ullam repellendus eveniet ipsum facilis deleniti voluptatibus debitis nihil veritatis, similique fugiat eaque nam nobis dolor sit?</p>
+              </div>
+              <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <form class="card-body">
+                  <h1 class="text-3xl font-bold text-center">Login</h1>
+                  <div class="form-control">
+                    <label class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                      <span class="label-text">Email</span>
+                    </label>
+                    <input type="email" placeholder="email" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                      <span class="label-text">Password</span>
+                    </label>
+                    <input type="password" placeholder="password" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary hover:bg-[#1a2d8a]">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
