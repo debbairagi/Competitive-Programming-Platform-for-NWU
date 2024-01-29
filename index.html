@@ -34,25 +34,26 @@
                       <li><a>Home</a></li>
                       <li><a>News & Events</a></li>
                       <li><a>Resources</a></li>
-                      <li><a>Developers</a></li>
+                      <li><a>Our Team</a></li>
                       <li><a>About Us</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-3xl font-bold">Hex<span class="text-blue-900">Clan</span></a>
+                  <a class="btn btn-ghost text-xl lg:text-3xl font-bold">Hex<span class="text-blue-900">Clan</span></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-[16px] font-semibold">
                     <li class="text-blue-900 font-bold"><a>Home</a></li>
                     <li><a>News & Events</a></li>
                     <li><a>Resources</a></li>
-                    <li><a>Developers</a></li>
+                    <li><a>Our Team</a></li>
                     <li><a>About Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end lg:gap-4">
-                    <a class="btn bg-blue-900 text-white">Log In</a>
-                    <a class="btn bg-blue-900 text-white">Sign Up</a>
+                <div class="navbar-end lg:gap-2">
+                    <a href="" class="btn bg-blue-900 text-white">Log In</a>
+                    <a href="" class="btn bg-blue-900 text-white">Sign Up</a>
                 </div>
+                <input type="checkbox" value="synthwave" class="toggle theme-controller lg:m-2"/>
               </div>
         </nav>
 
@@ -71,14 +72,58 @@
           </div>
         </div>
       </section>
+      <!-- news and event section  -->
+      <section class="w-10/12 mx-auto mt-10">
+        <h2 class="text-4xl font-bold text-center text-gray-500">Our News <span class="text-blue-900">And Events</span></h2>
+        <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div class="card w-96 lg:w-[300px] lg:h-[400px] shadow-xl image-full">
+            <figure><img src="Images/event-1.avif" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl text-white text-bold">Programming Contest with NWU</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id distinctio porro? Velit, numquam! Repellendus esse quisquam illum fuga est.</p>
+              <h2 class="text-xl text-red-500 font-bold mt-4">Today</h2>
+              <h2 class="text-xl  font-bold mb-4">Time:6:00PM</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-950 text-white">Registration Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 lg:w-[300px] lg:h-[400px] shadow-xl image-full">
+            <figure><img src="Images/event-2.avif" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl text-white text-bold">Programming Contest with NWU</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id distinctio porro? Velit, numquam! Repellendus esse quisquam illum fuga est.</p>
+              <h2 class="text-xl text-red-500 font-bold mt-4">March 12 , 2024</h2>
+              <h2 class="text-xl  font-bold mb-4">Time:10:00AM</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-950 text-white">Registration Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 lg:w-[300px] lg:h-[400px] shadow-xl image-full">
+            <figure><img src="Images/event-3.avif" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl text-white text-bold">Programming Contest with NWU</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id distinctio porro? Velit, numquam! Repellendus esse quisquam illum fuga est.</p>
+              <h2 class="text-xl text-red-500 font-bold mt-4">April 22 , 2024</h2>
+              <h2 class="text-xl  font-bold mb-4">Time:3:00PM</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-950 text-white">Registration Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
       <!-- learn section  -->
       <section class="w-10/12 mx-auto mt-10">
-        <h2 class="text-4xl font-bold text-center">A New Way To Learn</h2>
+        <h2 class="text-4xl font-bold text-center text-gray-500"><span class="text-blue-900">A New Way</span> To Learn</h2>
         <p class="text-center m-4">HexClan is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.</p>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10  lg:gap-20">
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="Images/practice.jpg" alt="Shoes" class="rounded-xl" />
+              <img src="Images/practice.jpg" alt="practice" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title font-bold text-2xl text-blue-900"><a href="">Practice</a></h2>
@@ -88,10 +133,10 @@
           </div>
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="Images/compete.avif" alt="Shoes" class="rounded-xl pt-20" />
+              <img src="Images/compete3.jpg" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title font-bold text-2xl text-blue-900"><a href="">Compete</a></h2>
+              <h2 class="card-title font-bold text-2xl text-blue-900 "><a href="">Compete</a></h2>
               <p>Coding challenges include a plethora of competitions like hackathons, programming challenges, and more. They are aimed at challenging your coding skills. Hackathons generally include developing an app/game/website based on a particular theme.</p>
               
             </div>
@@ -110,17 +155,66 @@
       </section>
       <!-- explore skills section  -->
       <section class="w-10/12 mx-auto mt-10">
-        <div class="hero lg:min-h-[450px] bg-gray-200 text-blue-950 rounded-2xl">
+        <div class="hero lg:min-h-[450px] bg-gray-200 text-blue-900 rounded-2xl">
           <div class="hero-content flex-col lg:flex-row">
             <img src="Images/code.1.avif" class="lg:max-w-xl rounded-xl lg:ml-6" />
             <div class="p-10">
               <h1 class="text-4xl font-bold">
-                Explore and expand your skills.</h1>
+                Explore and expand <span class="text-gray-500">your skills.</span></h1>
               <p class="py-6 text-gray-700">As technology continues to evolve, your success as a coder depends on your capability to learn and adapt. Any seasoned developer knows that you should always try to improve your coding skills. <br> Coding is a skill that requires a ton of practice and effort to master it. You can’t just wake up one day and suddenly become good at coding. All the good engineers out there have worked countless days and nights to perfect their coding skills. Therefore, you should not quit when you start your journey as a programmer or coder.  </p>
               <button class="btn bg-blue-950 text-xl text-white">Get Started</button>
             </div>
           </div>
         </div>
+
+      </section>
+      <!-- Our team  -->
+      <section class="w-10/12 mx-auto mt-10">
+      <h3 class="text-3xl lg:text-5xl font-bold text-center text-blue-900">Our Team</h3>
+        <div class="grid grid-cols-1 gap-4 my-8 md:grid-cols-2 lg:grid-cols-4">
+          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
+            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/deb.jpg" alt="Shoes" /></figure>
+            <div class="text-center mt-4  text-gray-500">
+                <h2 class="font-semibold text-xl">Debbindu Bairagi</h2>
+                <h4 class="text-xl font-bold text-sky-900"> Backend developer</h4>
+                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/debbindubd?mibextid=ZbWKwL" target="_blank">Debbindu Bairagi</a></p>
+                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/debbairagi" target="_blank">debbairagi</a></p>
+                <p class="text-sm font-semibold">E-mail: <address><a href=" debbindubd@gmail.com"> debbindubd@gmail.com</a></address>
+              </div>
+            </div>
+          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
+            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/zihad.jpg" alt="Shoes" /></figure>
+            <div class="text-center mt-4  text-gray-500">
+                <h2 class="font-semibold text-xl ">MD. Zihad</h2>
+                <h4 class="text-xl font-bold text-sky-900">Backend developer</h4>
+                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/debbindubd?mibextid=ZbWKwL" target="_blank">Debbindu Bairagi</a></p>
+                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/debbairagi" target="_blank">debbairagi</a></p>
+                <p class="text-sm font-semibold">E-mail: <address><a href=" debbindubd@gmail.com"> debbindubd@gmail.com</a></address>
+                
+              </div>
+            </div>
+          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
+            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/mimi.jpg" alt="Shoes" /></figure>
+            <div class="text-center mt-4  text-gray-500">
+                <h2 class="font-semibold text-xl">Fatema Tuz Johora</h2>
+                <h4 class="text-xl font-bold text-sky-900">Frontend developer</h4>
+                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/subha.mehjabin.10?mibextid=ZbWKwL" target="_blank">Fatema Tuz Johora</a></p>
+                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/fatema94" target="_blank">fatema94</a></p>
+                <p class="text-sm font-semibold">E-mail: <address><a href="fatemamimi2021@gmail.com">fatemamimi2021@gmail.com</a></address>
+                
+              </div>
+            </div>
+          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
+            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/naeem.jpg" alt="Shoes" /></figure>
+            <div class="text-center mt-4 text-gray-500">
+                <h2 class="font-semibold text-xl">MD. Abu Naeem</h2>
+                <h4 class="text-xl font-bold text-sky-900">Frontend developer</h4>
+                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/debbindubd?mibextid=ZbWKwL" target="_blank">Debbindu Bairagi</a></p>
+                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/debbairagi" target="_blank">debbairagi</a></p>
+                <p class="text-sm font-semibold">E-mail: <address><a href=" debbindubd@gmail.com"> debbindubd@gmail.com</a></address>
+              </div>
+            </div>
+          </div>
 
       </section>
 
