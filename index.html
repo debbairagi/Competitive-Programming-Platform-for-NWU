@@ -1,249 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hex Clan</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-             'btn-primary': 'blue-400',
-  
-  
-            }
-          }
-        }
-      }
-    </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HEX CLAN</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style/style.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="lg:w-10/12 mx-auto mt-6">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-44">
-                      <li><a>Home</a></li>
-                      <li><a>News & Events</a></li>
-                      <li><a>Resources</a></li>
-                      <li><a>Our Teamf</a></li>
-                      <li><a>About Us</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl lg:text-3xl font-bold">Hex<span class="text-blue-900">Clan</span></a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-[16px] font-semibold">
-                    <li class="text-blue-900 font-bold"><a>Home</a></li>
-                    <li><a>News & Events</a></li>
-                    <li><a>Resources</a></li>
-                    <li><a>Our Team</a></li>
-                    <li><a>About Us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end lg:gap-2">
-                    <a href="login.html" class="btn bg-blue-900 text-white">Log In</a>
-                    <a href="resistration.html" class="btn bg-blue-900 text-white">Sign Up</a>
-                </div>
-                <input type="checkbox" value="synthwave" class="toggle theme-controller lg:m-2"/>
-              </div>
-        </nav>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo-01.png" class="logo" alt="">
 
-    </header>
-    <main>
-      <!-- banner section  -->
-      <section class="w-10/12 mx-auto mt-6 rounded-3xl">
-        <div class="hero h-[500px]" style="background-image: url(Images/banner1.avif);">
-          <div class="hero-overlay bg-opacity-60"></div>
-          <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-3xl text-white lg:text-5xl font-bold">NWU PROGRAMMING Team</h1>
-              <p class="mb-5">Start your coding journey today. Learn to code from scratch with job focussed courses designed by experts. infographic. Start learning today.</p>
-              <button class="btn text-white bg-blue-950 lg:text-xl">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- news and event section  -->
-      <section class="w-10/12 mx-auto mt-10">
-        <h2 class="text-4xl font-bold text-center text-gray-500">Our News <span class="text-blue-900">And Events</span></h2>
-        <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div class="card w-96 lg:w-[300px] lg:h-[400px] shadow-xl image-full">
-            <figure><img src="Images/event-1.avif" alt="Shoes" /></figure>
-            <div class="card-body">
-              <h2 class="card-title text-2xl text-white text-bold">Programming Contest with NWU</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id distinctio porro? Velit, numquam! Repellendus esse quisquam illum fuga est.</p>
-              <h2 class="text-xl text-red-500 font-bold mt-4">Today</h2>
-              <h2 class="text-xl  font-bold mb-4">Time:6:00PM</h2>
-              <div class="card-actions">
-                <button class="btn bg-blue-950 text-white">Registration Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card w-96 lg:w-[300px] lg:h-[400px] shadow-xl image-full">
-            <figure><img src="Images/event-2.avif" alt="Shoes" /></figure>
-            <div class="card-body">
-              <h2 class="card-title text-2xl text-white text-bold">Programming Contest with NWU</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id distinctio porro? Velit, numquam! Repellendus esse quisquam illum fuga est.</p>
-              <h2 class="text-xl text-red-500 font-bold mt-4">March 12 , 2024</h2>
-              <h2 class="text-xl  font-bold mb-4">Time:10:00AM</h2>
-              <div class="card-actions">
-                <button class="btn bg-blue-950 text-white">Registration Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card w-96 lg:w-[300px] lg:h-[400px] shadow-xl image-full">
-            <figure><img src="Images/event-3.avif" alt="Shoes" /></figure>
-            <div class="card-body">
-              <h2 class="card-title text-2xl text-white text-bold">Programming Contest with NWU</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id distinctio porro? Velit, numquam! Repellendus esse quisquam illum fuga est.</p>
-              <h2 class="text-xl text-red-500 font-bold mt-4">April 22 , 2024</h2>
-              <h2 class="text-xl  font-bold mb-4">Time:3:00PM</h2>
-              <div class="card-actions">
-                <button class="btn bg-blue-950 text-white">Registration Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="newsevent.html">News & Event</a></li>
+				<li><a href="">Our Team</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="">Contact</a></li>
+				<li class=""><a  href="">Code Ninja</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
 
 
-      </section>
-      <!-- learn section  -->
-      <section class="w-10/12 mx-auto mt-10">
-        <h2 class="text-4xl font-bold text-center text-gray-500"><span class="text-blue-900">A New Way</span> To Learn</h2>
-        <p class="text-center m-4">HexClan is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.</p>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10  lg:gap-20">
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="Images/practice.jpg" alt="practice" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title font-bold text-2xl text-blue-900"><a href="">Practice</a></h2>
-              <p>Practicing coding outside of the classroom is as important as the time you spend inside of it. Jaimie Stevens shares her strategy for how to improve programming skills in your free time.</p>
-              
-            </div>
-          </div>
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="Images/compete3.jpg" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title font-bold text-2xl text-blue-900 "><a href="">Compete</a></h2>
-              <p>Coding challenges include a plethora of competitions like hackathons, programming challenges, and more. They are aimed at challenging your coding skills. Hackathons generally include developing an app/game/website based on a particular theme.</p>
-              
-            </div>
-          </div>
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="Images/discuss.avif" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title font-bold text-2xl text-blue-900"><a href="">Discuss</a></h2>
-              <p>How you collaborate with other developers to build better software and get better results. You will learn why it is worthwhile to collaborate with other software developers and how you can improve your own skills in a targeted manner.</p>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- explore skills section  -->
-      <section class="w-10/12 mx-auto mt-10">
-        <div class="hero lg:min-h-[450px] bg-gray-200 text-blue-900 rounded-2xl">
-          <div class="hero-content flex-col lg:flex-row">
-            <img src="Images/code.1.avif" class="lg:max-w-xl rounded-xl lg:ml-6" />
-            <div class="p-10">
-              <h1 class="text-4xl font-bold">
-                Explore and expand <span class="text-gray-500">your skills.</span></h1>
-              <p class="py-6 text-gray-700">As technology continues to evolve, your success as a coder depends on your capability to learn and adapt. Any seasoned developer knows that you should always try to improve your coding skills. <br> Coding is a skill that requires a ton of practice and effort to master it. You can’t just wake up one day and suddenly become good at coding. All the good engineers out there have worked countless days and nights to perfect their coding skills. Therefore, you should not quit when you start your journey as a programmer or coder.  </p>
-              <button class="btn bg-blue-950 text-xl text-white">Get Started</button>
-            </div>
-          </div>
-        </div>
+	<!-- Hero section starts from here -->
+	<section id="home">
+		<h2>
+			Enhance Your Journey With HEX CLAN
+		</h2>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsum laboriosam architecto tempora explicabo ratione pariatur accusantium consequatur sed odit?
+		</p>
+		<div class="btn">
+			<a href="#" class="blue">Learn More</a>
+		</div>
+	</section>
+	<!-- Hero section ends from here -->
 
-      </section>
-      <!-- Our team  -->
-      <section class="w-10/12 mx-auto mt-10">
-      <h3 class="text-3xl lg:text-5xl font-bold text-center text-blue-900">Our Team</h3>
-        <div class="grid grid-cols-1 gap-4 my-8 md:grid-cols-2 lg:grid-cols-4">
-          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
-            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/deb.jpg" alt="Shoes" /></figure>
-            <div class="text-center mt-4  text-gray-500">
-                <h2 class="font-semibold text-xl">Debbindu Bairagi</h2>
-                <h4 class="text-xl font-bold text-sky-900"> Backend developer</h4>
-                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/debbindubd?mibextid=ZbWKwL" target="_blank">Debbindu Bairagi</a></p>
-                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/debbairagi" target="_blank">debbairagi</a></p>
-                <p class="text-sm font-semibold">E-mail: <address><a href=" debbindubd@gmail.com"> debbindubd@gmail.com</a></address>
-              </div>
-            </div>
-          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
-            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/zihad.jpg" alt="Shoes" /></figure>
-            <div class="text-center mt-4  text-gray-500">
-                <h2 class="font-semibold text-xl ">MD. Zihad</h2>
-                <h4 class="text-xl font-bold text-sky-900">Backend developer</h4>
-                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/profile.php?id=100009735705186&mibextid=ZbWKwL" target="_blank">MD. Zihad</a></p>
-                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/md-zihad" target="_blank">md-zihad</a></p>
-                <p class="text-sm font-semibold">E-mail: <address><a href="md.zihad0246@gmail.com">md.zihad0246@gmail.com</a></address>
-                
-              </div>
-            </div>
-          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
-            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/mimi.jpg" alt="Shoes" /></figure>
-            <div class="text-center mt-4  text-gray-500">
-                <h2 class="font-semibold text-xl">Fatema Tuz Johora</h2>
-                <h4 class="text-xl font-bold text-sky-900">Frontend developer</h4>
-                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/subha.mehjabin.10?mibextid=ZbWKwL" target="_blank">Fatema Tuz Johora</a></p>
-                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/fatema94" target="_blank">fatema94</a></p>
-                <p class="text-sm font-semibold">E-mail: <address><a href="fatemamimi2021@gmail.com">fatemamimi2021@gmail.com</a></address>
-                
-              </div>
-            </div>
-          <div class="card bg-base-300 p-9 border border-blue-900 shadow-xl hover:bg-white">
-            <figure><img class="w-40 rounded-full border border-blue-900" src="Images/naeem.jpg" alt="Shoes" /></figure>
-            <div class="text-center mt-4 text-gray-500">
-                <h2 class="font-semibold text-xl">MD. Abu Naeem</h2>
-                <h4 class="text-xl font-bold text-sky-900">Frontend developer</h4>
-                <p class="text-sm font-semibold">Facebook: <a href="https://www.facebook.com/abu.naeem.adnan?mibextid=ZbWKwL" target="_blank">MD. Abu Naeem</a></p>
-                <p class="text-sm font-semibold">GitHub: <a href="https://github.com/NaeemAdnan" target="_blank">NaeemAdnan</a></p>
-                <p class="text-sm font-semibold">E-mail: <address><a href="abunaeem401@gmail.com">abunaeem401@gmail.com</a></address>
-              </div>
-            </div>
-          </div>
 
-      </section>
+	<!-- Features section starts from here -->
+	<section id="features">
+		<h1>Awesome Features</h1>
+		<p>Replenish man have thing gathering lights yielding shall you</p>
 
-    </main>
-    <footer>
-      <footer class="footer p-10 bg-gray-800 text-white text-base-content">
-        <nav>
-          <h6 class="footer-title text-2xl">Hex <span class="text-blue-800">Clan</span></h6> 
-          <a class="link link-hover">News & Events</a>
-          <a class="link link-hover">Resources</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <h6 class="footer-title">Company</h6> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact us</a>
-          <a class="link link-hover">Our Team</a>
-        </nav> 
-        <nav>
-          <h6 class="footer-title">Social</h6> 
-          <div class="grid grid-flow-col gap-4">
-            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
-            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
-          </div>
-        </nav>
-      </footer>
+		<div class="fea-base">
+			<div class="fea-box">
+				<i class="fas fa-graduation-cap"></i>
+				<h3>Scholorship Facility</h3>
+				<p>
+					One make creepeth, man bearing theira firmament won't great heaven
+				</p>
+			</div>
 
-    </footer>
-    
+			<div class="fea-box">
+				<i class="fa-solid fa-book-bookmark"></i>
+				<h3>Make you productive</h3>
+				<p>
+					One make creepeth, man bearing theira firmament won't great heaven
+				</p>
+			</div>
+
+			<div class="fea-box">
+				<i class="fas fa-award"></i>
+				<h3>Certification</h3>
+				<p>
+					One make creepeth, man bearing theira firmament won't great heaven
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- Features section ends from here -->
+
+
+	<!-- News and Event -->
+	<section id="event">
+		<h1>News and Events</h1>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius eligendi tempore animi iure quam, fuga necessitatibus porro aliquid voluptatem at?</p>
+
+		<div class="event-box">
+			<div class="events">
+				<img src="img/c1.jpg" alt="">
+				<div class="details">
+					<span>Updated 21/8/24</span>
+					<h6>Lorem ipsum dolor sit amet.</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="events">
+				<img src="img/c2.jpg" alt="">
+				<div class="details">
+					<span>Updated 21/8/24</span>
+					<h6>Lorem ipsum dolor sit amet.</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="events">
+				<img src="img/c3.jpg" alt="">
+				<div class="details">
+					<span>Updated 21/8/24</span>
+					<h6>Lorem ipsum dolor sit amet.</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="events">
+				<img src="img/c4.jpg" alt="">
+				<div class="details">
+					<span>Updated 21/8/24</span>
+					<h6>Lorem ipsum dolor sit amet.</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="events">
+				<img src="img/c5.jpg" alt="">
+				<div class="details">
+					<span>Updated 21/8/24</span>
+					<h6>Lorem ipsum dolor sit amet.</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="events">
+				<img src="img/c6.jpg" alt="">
+				<div class="details">
+					<span>Updated 21/8/24</span>
+					<h6>Lorem ipsum dolor sit amet.</h6>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+
+						<span>(239)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- events section ends from here -->
+
+
+	<!-- Registration section starts from here -->
+	<section id="registration">
+		<div class="reminder">
+			<p>Get an events for Free</p>
+			<h1>Registration To Get It</h1>
+
+			<div class="time">
+				<div class="date">18 <br> Days</div>
+				<div class="date">23 <br> Hours</div>
+				<div class="date">06 <br> Minutes</div>
+				<div class="date">58 <br> Seconds</div>
+			</div>
+		</div>
+
+		<div class="form">
+			<h3>Create Free Account NOW!</h3>
+
+			<input type="text" placeholder="Name" name="" id="">
+			<input type="email" placeholder="Email ID" name="" id="">
+			<input type="text" placeholder="Contact Number" name="" id="">
+
+			<div class="btn">
+				<a href="#" class="yellow">Submit Form</a>
+			</div>
+		</div>
+	</section>
+	<!-- Registration section ends from here -->
+
+
+	<!-- Experts section starts from here -->
+	<section id="experts">
+		<h1>Community Experts</h1>
+		<p>Replenish man have thing gathering lights yielding shall you</p>
+		<div class="expert-box">
+			<div class="profile">
+				<img src="img/zihad.jpg" alt="">
+				<h6>MD. Zihad</h6>
+				<p>Backend developer</p>
+				<div class="pro-links">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+					<i class="fab fa-github"></i>
+				</div>
+			</div>
+
+			<div class="profile">
+				<img src="img/deb.jpg" alt="">
+				<h6>Debbindu Bairagi</h6>
+				<p>Backend developer</p>
+				<div class="pro-links">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+					<i class="fab fa-github"></i>
+				</div>
+			</div>
+
+			<div class="profile">
+				<img src="img/naeem.jpg" alt="">
+				<h6>MD. Abu Naeem</h6>
+				<p>Frontend developer</p>
+				<div class="pro-links">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+					<i class="fab fa-github"></i>
+				</div>
+			</div>
+
+			<div class="profile">
+				<img src="img/mimi.jpg" alt="">
+				<h6>Fatema Tuz Johora</h6>
+				<p>Frontend developer</p>
+				<div class="pro-links">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+					<i class="fab fa-github"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Experts section ends from here -->
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Top Products</h3>
+			<li>Manage Reputation</li>
+			<li>Power Tools</li>
+			<li>Managed Website</li>
+			<li>Marketing Service</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Power Tools</h3>
+			<li>Jobs</li>
+			<li>Marketing Service</li>
+			<li>Top Products</li>
+			<li>Manage Reputation</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Power Tools</h3>
+			<li>Managed Website</li>
+			<li>Manage Reputation</li>
+			<li>Top Products</li>
+			<li>Marketing Service</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Guides</h3>
+			<li>Research</li>
+			<li>Experts</li>
+			<li>Managed Website</li>
+			<li>Marketing Service</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>You can trust us. we only send promo offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2024 All rights reserved | North Western University, Khulna
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+				<i class="fab fa-github"></i>
+				<i class="fab fa-twitter"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
 </body>
 </html>

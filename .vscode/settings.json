@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "editor.stickyScroll.enabled": false
+=======
+    "editor.stickyScroll.enabled": false,
+    "liveServer.settings.port": 5501
+>>>>>>> naeem
 }
